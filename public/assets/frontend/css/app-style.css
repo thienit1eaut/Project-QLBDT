@@ -1,0 +1,12 @@
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav-tabs .nav-link {
+    color: #3490dc;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
