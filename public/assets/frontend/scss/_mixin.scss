@@ -1,0 +1,28 @@
+@mixin fontSize($size) {
+    font-size: $size * 1px;
+    font-size: rem($size);
+}
+@mixin smooth($property:all, $delay:0.3, $timing:ease-in-out) {
+  transition: $property $delay * 1s $timing;
+    -webkit-transition: $property $delay * 1s $timing;
+  -moz-transition: $property $delay * 1s $timing;
+  -o-transition: $property $delay * 1s $timing;
+}
+@mixin transform_s($value) {
+  transform: scale($value);
+  -moz-transform: scale($value);
+  -webkit-transform: scale($value);
+  -o-transform: scale($value);
+}
+@mixin transform_r($value) {
+  transform: rotate($value * -1deg);
+  -moz-transform: rotate($value * -1deg);
+  -webkit-transform: rotate($value * -1deg);
+  -o-transform: rotate($value * -1deg);
+}
+@mixin transform_X($value) {
+  transform: translateX($value);
+  -moz-transform: translateX($value);
+  -webkit-transform: translateX($value);
+  -o-transform: translateX($value);
+}
